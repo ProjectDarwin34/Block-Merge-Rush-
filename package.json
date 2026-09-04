@@ -1,0 +1,25 @@
+{
+  "name": "block-merge-rush",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Block Merge Rush - a casual merge puzzle game, packaged for Android via Capacitor.",
+  "scripts": {
+    "sync": "npx cap sync android",
+    "android": "npx cap add android",
+    "open:android": "npx cap open android",
+    "test:v8": "node tests/v8-regression.js",
+    "prepare:android": "npm install && npx cap add android && npx cap sync android",
+    "build:aab": "cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/app": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/android": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
